@@ -20,7 +20,7 @@
       referrerpolicy="no-referrer"
     >
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
 
   <body>
@@ -150,7 +150,7 @@
                 src="./img/doing/one.jpg"
                 alt="a person looks at the tablet and prints on the keyboard"                
               />
-              <h3 class="services__descr">Desktop applications</h3>
+              <h3 class="services__descr">Desktop apps</h3>
             </li>
 
             <li class="services__item">
@@ -159,7 +159,7 @@
                 src="./img/doing/two.jpg"
                 alt="a person holds a telephone in the left hand and uses the touchpad on a laptop her the right hand"                
               />
-              <h3 class="services__descr">Mobile applications</h3>
+              <h3 class="services__descr">Mobile apps</h3>
             </li>
 
             <li class="services__item">
@@ -496,79 +496,57 @@
 
     <!-- Modal Order service-->
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button class="modal-close" type="button" data-modal-close>
-          <svg class="modal-close-icon">
-            <use href="./img/icon-sprite.svg#icon-modal-close-icon"></use>
-          </svg>
-        </button>
-
-        <p class="modal-title">Leave your details, we will call you back</p>
-
-        <form class="modal-form" autocomplete="off">
-          <label class="modal-form-field">
-            <input              
-              class="modal-form-field-data"
-              name="name"
-              type="text"
-              placeholder=" "
-            >
-            <span class="modal-form-field-title">Name</span>
-            <svg class="modal-form-field-icon">
-              <use href="./img/icon-sprite.svg#form-person"></use>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close-button" type="button" data-modal-close>
+            <svg class="close-button__icon">
+              <use href="./img/icon-sprite.svg#icon-modal-close-icon"></use>
             </svg>
-          </label>
+          </button>
+      
+          <p class="title">Leave your details, we will call you back</p>
+      
+          <form class="form" autocomplete="off">
+            <div class="form__el">
+              <input class="form__field" name="name" type="text" placeholder=" ">
+              <label class="form__label">Name</label>
+              <svg class="form__icon">
+                <use href="./img/icon-sprite.svg#form-person"></use>
+              </svg>
+            </div>
 
-          <label class="modal-form-field">
-            <input              
-              class="modal-form-field-data"
-              name="phone"
-              type="tel"
-              placeholder=" "
-            >
-            <span class="modal-form-field-title">Phone</span>
-            <svg class="modal-form-field-icon">
-              <use href="./img/icon-sprite.svg#form-phone"></use>
-            </svg>
-          </label>
+            <div class="form__el">
+              <input class="form__field" name="name" type="text" placeholder=" ">
+              <label class="form__label">Phone</label>
+              <svg class="form__icon">
+                <use href="./img/icon-sprite.svg#form-phone"></use>
+              </svg>
+            </div>
 
-          <label class="modal-form-field">
-            <input
-              class="modal-form-field-data"
-              name="email"
-              type="email"              
-              placeholder=" "
-            >
-            <span class="modal-form-field-title">E-mail</span>
-            <svg class="modal-form-field-icon">
-              <use href="./img/icon-sprite.svg#form-mail"></use>
-            </svg>
-          </label>
-
-          <label class="modal-form-field textarea">
-            <textarea
-              class="modal-form-field-data textarea-data"
-              name="comment"              
-              placeholder=" ">
-            </textarea>
-            <span class="modal-form-field-title textarea-title">Comment</span>
-          </label>
-
-          <label class="modal-form-checkbox">
-            <input
-              class="modal-form-checkbox-el visually-hidden"
-              type="checkbox"              
-            >
-            <span class="modal-form-checkbox-icon"></span>
-            <span class="modal-form-checkbox-text">I agree with the mailing and accept</span>
-            <a class="modal-form-checkbox-link" href="" >the Terms of the Agreement</a>
-          </label>
-
-          <button class="modal-form-button" type="submit">Send</button>
-        </form>
+            <div class="form__el">
+              <input class="form__field" name="name" type="text" placeholder=" ">
+              <label class="form__label">E-mail</label>
+              <svg class="form__icon">
+                <use href="./img/icon-sprite.svg#form-mail"></use>
+              </svg>
+            </div>
+            
+            <div class="textarea">              
+              <textarea name="comment" rows="5" placeholder=" " class="textarea__field"></textarea>
+              <label class="textarea__text">Comment</label>              
+            </div>
+                         
+            <label class="checkbox">
+              <input class="checkbox__el visually-hidden" type="checkbox">
+              <span class="checkbox__icon"></span>
+              <span class="checkbox__text">I agree with the mailing and accept</span>
+              <a class="checkbox__link" href="">the Terms of the Agreement</a>
+            </label>
+      
+            <button class="submit-button" type="submit">Send</button>
+          </form>
+        </div>
       </div>
-    </div>
 
     <script src="./modal.js"></script>
   </body>
