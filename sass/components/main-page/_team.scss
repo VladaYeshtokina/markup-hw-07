@@ -2,11 +2,11 @@
   background-color: #f5f4fa;
 
 &__title {
-  @include title();
+  @extend %title;
 }
 
 &__list {
-  @include listStyle();
+  @extend %listStyle;
 }
 
 &__item {

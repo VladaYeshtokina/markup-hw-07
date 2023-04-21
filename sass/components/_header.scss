@@ -4,7 +4,7 @@
 }
 
 .main {
-  @include flex();
+  @extend %flex;
 }
 
 .nav {
@@ -56,7 +56,7 @@
 }
 
 .contacts__link {
-  @include flex();
+  @extend %flex;
   padding-top: 32px;
   padding-bottom: 32px;
 

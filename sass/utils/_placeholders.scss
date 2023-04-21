@@ -1,14 +1,4 @@
-@mixin size($width, $height) {
-  width: $width;
-  height: $height;
-}
-
-@mixin textStyle($font-weight, $line-height) {
-  font-weight: $font-weight;
-  line-height: $line-height;
-}
-
-@mixin button () {
+%button {
   @include textStyle(700, 1.88);
   letter-spacing: 0.06em;
   font-size: 16px;
@@ -22,27 +12,21 @@
   cursor: pointer;
 }
 
-@mixin title() {
+%title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;    
+  text-align: center;
 }
 
-@mixin listStyle() {
+%listStyle {
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
 }
 
-@mixin position($position, $top, $left) {
-  position: $position;
-  top: $top;
-  left: $left;
-}
-
-@mixin flex() {
+%flex {
   display: flex;
   align-items: center;
 }

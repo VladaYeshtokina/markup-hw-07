@@ -1,9 +1,9 @@
 .customers__title {
-  @include title();
+  @extend %title;
 }
 
 .customers__list {
-  @include listStyle();
+  @extend %listStyle;
 }
 
 .customers__item {
@@ -15,7 +15,7 @@
 }
 
 .customers__item-bg {
-  @include flex();
+  @extend %flex;
   justify-content: center;
   @include size(170px, 92px);
 

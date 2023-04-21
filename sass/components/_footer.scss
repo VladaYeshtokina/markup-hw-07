@@ -111,14 +111,14 @@
 }
 
 .footer__button {
-  width: 200px;
+  min-width: 200px;
   padding: 10px 28px;
   margin-left: 12px;
 
-  @include flex();
+  @extend %flex;
   justify-content: center;
   
-  @include button();
+  @extend %button;
   background-size: cover;
 
 &:hover,

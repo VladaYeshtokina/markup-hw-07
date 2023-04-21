@@ -30,7 +30,7 @@
 &__button {
   min-width: 216px;
   padding: 10px 32px;
-  @include button();
+  @extend %button;
 }
 
 &__button:hover,

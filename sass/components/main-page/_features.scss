@@ -1,5 +1,5 @@
 .features {
-  @include listStyle();
+  @extend %listStyle;
   align-items: flex-start;
   
   &__item {
@@ -7,7 +7,7 @@
   }
 
   &__icon-bg {
-    @include flex();
+    @extend %flex;
     justify-content: center;
     @include size(270px, 120px);
     margin-bottom: 30px;

@@ -2,11 +2,11 @@
   padding-top: 0;
 
 &__title {
-  @include title();
+  @extend %title;
 }
 
 &__list {
-  @include listStyle();
+  @extend %listStyle;
 }
 
 &__item {

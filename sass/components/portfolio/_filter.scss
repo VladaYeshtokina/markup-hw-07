@@ -1,5 +1,5 @@
 .filter__list {
-  @include listStyle();
+  @extend %listStyle;
   justify-content: center;
   column-gap: 8px;
   margin-bottom: 50px;
